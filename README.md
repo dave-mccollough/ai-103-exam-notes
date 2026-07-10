@@ -7,4 +7,4 @@
 
 # Notes
 
-- [Microsoft Foundry](01-microsoft-foundry)
+- [Plan and prepare to develop AI solutions on Azure](01-plan-prepare-ai-solutions)
