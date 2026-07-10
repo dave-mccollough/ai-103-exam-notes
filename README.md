@@ -4,6 +4,7 @@
 
 - [Udemy](https://www.udemy.com/course/ai-102-azure-ai-engineer-associate-certification-exam-prep-m)
 - [Microsoft Learn](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-apps-and-agents-developer-associate/?practice-assessment-type=certification#certification-prepare-for-the-exam)
+- [YouTube](https://www.youtube.com/playlist?list=PLWGIg_TYLeEQ)
 
 # Notes
 
