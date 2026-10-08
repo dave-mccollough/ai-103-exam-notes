@@ -11,4 +11,5 @@
 - [Plan and prepare to develop AI solutions on Azure](01-plan-prepare-ai-solutions)
 - [Select, deploy and evaluate Microsoft Foundry models](02-select-deploy-evaluate-models)
 - [Develop a generative AI chat app with Microsoft Foundry](03-develop-chat-app-foundry)
+- [Develop generative AI apps that use tools](04-develop-genai-apps-with-tools)
 

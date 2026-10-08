@@ -1,0 +1,42 @@
+# Develop generative AI apps that use tools
+
+- What are tools
+  - Models use tools to:
+    - Access real-time information
+    - Take actions
+    - Ground responses in facts
+    - Extend functionality
+    - Build intelligent workflows
+
+- Common tools
+  - `code_interrpreter`
+    - Generate and run code
+      - Model receives question
+      - Code is generated and executed
+      - Response is returned
+  - `web_search` or `web_search_preview`
+    - Find current information on the internet
+      - Model detects need for live data
+      - Web search is performed
+      - Grounded response is returned
+  - `file_search`
+    - Search files and ground responses in specific content
+      - Create a vector store
+        - A managed document storage that holds documents and their embeddings
+        - An embedding is a way of turning complex data—such as text, images, audio, or video—into a list of numbers called a vector.
+      - Upload and index documents
+        - Files are automtically chunked, embedded and stored
+      - Relevant chunks are retrieved
+        - At query time, semantically relevant chunks are found and provided as context
+      - Model answers from document
+        - Response is grounded in the retrieved content, optionally with chunk level citations 
+  - `function`
+    - Call custom functions in your application code
+      - Define a function
+        - Describe your function so the model knows when to call it
+      - Setup tools
+        - Register the function as tool and intialize the conversation with developer and user messages
+      - Execute function call
+        - Run the requested function when the model triggers a function call and capture it's output
+      - Model formulates final answer
+        - Send the function result back to the model to form the user facing response
