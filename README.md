@@ -13,3 +13,4 @@
 - [Develop a generative AI chat app with Microsoft Foundry](03-develop-chat-app-foundry)
 - [Develop generative AI apps that use tools](04-develop-genai-apps-with-tools)
 - [Optimize generative AI model performance with Microsoft Foundry](05-optimize-model-performance)
+- [Implement a responsible generative AI solution in Microsoft Foundry](06-implement-responsible-ai)

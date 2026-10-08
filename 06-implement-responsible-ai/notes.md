@@ -1,0 +1,41 @@
+# Implement a responsible generative AI solution in Microsoft Foundry
+
+- Plan a responsible GenAI solutio
+
+- Mapping
+  - List of potential harms
+    - Input or requests that could cause the app to do something harmful
+- Measurements
+  - Review outputs
+  - Test current inputs - web, files, etc
+  - Test against current solutions
+- Mitigate
+  - Things we can do to prevent the potential harms from occuring
+  - List/layered approach to defense
+    - User Experience
+      - Limit characters user can input
+      - Limit to # chats user can initiate
+    - System message and grounding
+      - Limit what the model can talk about
+    - Safety system
+      - Guardrails
+    - Model
+      - Safety metric
+      - Pick a safer model
+    - Manage
+      - Monitoring
+
+- Guardrails
+  - Models have default guardrails
+  - Review and rate conversations based on guardrails
+    - Violence
+    - Hate
+    - Sexual Assault
+    - Self harm
+    - Prompt injection
+    - Indirect attacks
+    - Spotlighting
+    - Copyrighted materials - Code
+    - Copyrighted materials - text
+    - Groundedness
+    - PII
