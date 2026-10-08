@@ -1,0 +1,59 @@
+# Develop a generative AI chat app with Microsoft Foundry
+
+- Interactive Model Testing
+  - Send prompts to deployed models to see responses in real-time
+  - Adjust temperature
+    - The higher the temperature, the more creative the models output
+  - Adjust max tokens
+    - Test prompt and adjust max tokens based on output
+  - System messages to customize model behavior
+  - Experiment with different models and configurations
+
+- Foundry Endpoints and SDK
+  - Two different API endpoints
+    - Azure OpenAI
+      - Using LLM more direclty
+      - SDK
+        - OpenAI SDK
+      - Auth
+        - Microsoft Entra or API Key
+          - Entra recommended
+      - Chat API
+        - Responses or ChatCompletions API
+      - Best for
+        - Using the latest OpenAI SDK
+        - Access to the full OpenAI API surface
+    - Foundry Endpoint - Foundry Project
+      - SDK
+        - Microsoft Foundry SDK
+      - Auth
+        - Microsoft Entra 
+      - Chat API
+        - Responses API
+      - Best for
+        - Foundry specific capabilities
+        - OpenAI compatible interfaces for Foundry direct models
+        - Agentic features
+
+- ChatCompletions vs Responses API
+  - ChatCompletions API (OpenAI)
+    - State Management
+      - Client side
+        - Developer stores and sends full message array
+      - System prommpt
+        - First entry in messages array
+        - `{"role":, "system", "content": "..." }`
+      - Payload per request
+        - Grows per conversation length
+      - Accessing the response
+        - `completion.choices[0].message.content`
+  - ResponsesAPI
+    - State Management
+      - Server Side
+        - API stores thread automatically
+      - System Prompt
+        - Dedicated parameter instructions
+      - Payload per request
+        - Constant - Only latest input + an ID
+      - Accessing the response
+        - `response.output_text`
